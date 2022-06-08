@@ -4,7 +4,7 @@
 using namespace std;
 
 //Seccion *objSeccion;
-Seccion *objSeccion= new Seccion();
+Seccion *objSeccion= new Seccion(3);
 string *Listado, *ptr;
 
 int main()
@@ -14,13 +14,15 @@ int main()
     objSeccion->setHora("1800");
     objSeccion->setUV("5");
 
-    objSeccion->setCupos(3);
+    //objSeccion->setCupos(3);
 
     objSeccion->Matricular("Pedro");
     objSeccion->Matricular("Pablo");
     objSeccion->Matricular("Vilma");
 
-    //objSeccion->setCupos(10);
+    objSeccion->setCupos(10);
+
+    objSeccion->Matricular("Bety");
 
     cout << objSeccion->getNombre();
     Listado = objSeccion->Listado();

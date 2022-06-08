@@ -17,7 +17,7 @@ private:
     string *Alumnos;
 
 public:
-    Seccion();
+    Seccion(int );
 
     void setNombre(string Nombre);
     string getNombre();
